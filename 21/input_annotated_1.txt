@@ -1,0 +1,31 @@
+0: e = 123
+1: e = e & 456
+2: e = 1 if e == 72 else 0
+3: RELJMP e
+4: JMP 1
+5: e = 0
+6: d = e | 65536
+7: e = 4332021
+8: c = d & 255
+9: e = e + c
+10: e = e & 16777215
+11: e = e * 65899
+12: e = e & 16777215
+13: c = 1 if 256 > d else 0
+14: RELJMP c
+15: JMP 17
+16: JMP 28
+17: c = 0
+18: b = c + 1
+19: b = b * 256
+20: b = 1 if b > d else 0
+21: RELJMP b
+22: JMP 24
+23: JMP 26
+24: c = c + 1
+25: JMP 18
+26: d = c
+27: JMP 8
+28: c = 1 if e == a else 0
+29: RELJMP c
+30: JMP 6

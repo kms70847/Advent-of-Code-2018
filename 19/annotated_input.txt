@@ -1,0 +1,18 @@
+#JMP commands don't increment the ip afterwards. So the line number given is what will execute in the next step.
+#RELJMP commands do increment afterwards.
+
+24: b = 911
+25: if part_two:
+33:     b += 10550400
+1: c = 1
+do(
+    2: f = 1
+    do{
+        3: d = c * f
+        6: if d == b:
+        7:     a = c + a
+        8: f += 1
+    } while (f <= b);
+    12: c += 1
+} while (c <= b);
+16: EXIT
